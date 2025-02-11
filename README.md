@@ -25,7 +25,9 @@ In both terminals, run this:
 npm run dev
 ```
 
-This will setup the development server for both sides which will refresh when you save. From here you should be good to go!
+This will setup the development server for both sides which will refresh when you save. From here you should be good to go! 
+
+I would also recommend you run the lint and format commands before you commit!
 
 ## What's Inside
 
