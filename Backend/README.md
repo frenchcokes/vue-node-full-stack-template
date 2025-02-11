@@ -1,10 +1,4 @@
-# Frontend
-
-This template is an unsupported addition from the Vue + Vite template.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+# Backend
 
 ## Project Setup
 
@@ -21,12 +15,6 @@ npm install
 
 ```sh
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)

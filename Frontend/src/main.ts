@@ -1,20 +1,20 @@
-import './assets/main.css'
-import './index.css'
+import './assets/main.css';
+import './index.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-import PrimeVue from 'primevue/config'
-import Aura from '@primevue/themes/aura'
-import { definePreset } from '@primevue/themes'
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+import { definePreset } from '@primevue/themes';
 
-import App from './App.vue'
-import router from './router'
+import App from './App.vue';
+import router from './router';
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router)
+app.use(createPinia());
+app.use(router);
 
 const coolPreset = definePreset(Aura, {
   semantic: {
@@ -32,7 +32,7 @@ const coolPreset = definePreset(Aura, {
       950: '{Blue.950}',
     },
   },
-})
+});
 
 app.use(PrimeVue, {
   theme: {
@@ -45,6 +45,6 @@ app.use(PrimeVue, {
       darkModeSelector: false || 'none',
     },
   },
-})
+});
 
-app.mount('#app')
+app.mount('#app');
