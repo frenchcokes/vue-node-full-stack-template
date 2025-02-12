@@ -3,7 +3,7 @@ import { db2 } from '../database/db';
 
 const router = Router();
 
-router.post('/book', async (req, res) => {
+router.post('/books', async (req, res) => {
   try {
     await db2('books').insert({
       title: req.body.title,
@@ -16,7 +16,7 @@ router.post('/book', async (req, res) => {
   }
 });
 
-router.get('/book', async (req, res) => {
+router.get('/books', async (req, res) => {
   try {
     const data = await db2('books')
       .select('*')
@@ -29,7 +29,7 @@ router.get('/book', async (req, res) => {
   }
 });
 
-router.delete('/book/:id', async (req, res) => {
+router.delete('/books/:id', async (req, res) => {
   try {
     await db2('books').delete().where('id', req.params.id);
     res.status(200).send({ message: 'Book deleted successfully.' });
@@ -38,7 +38,7 @@ router.delete('/book/:id', async (req, res) => {
   }
 });
 
-router.patch('/book/:id', async (req, res) => {
+router.patch('/books/:id', async (req, res) => {
   try {
     await db2('books')
       .update({
