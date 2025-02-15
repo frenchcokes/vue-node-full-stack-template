@@ -1,18 +1,18 @@
 import { Knex } from 'knex';
-import { db2 } from './db';
+import { db } from './db';
 
 export async function setupDatabase() {
-  await db2.schema.hasTable('books').then(async exists => {
+  await db.schema.hasTable('books').then(async exists => {
     if (!exists) {
-      await db2.schema.createTable('books', (table: Knex.TableBuilder) => {
+      await db.schema.createTable('books', (table: Knex.TableBuilder) => {
         table.increments('id').primary();
         table.string('title').notNullable();
         table.string('author').notNullable();
         table.date('date_published').notNullable();
-        table.timestamp('date_added').notNullable().defaultTo(db2.fn.now());
+        table.timestamp('date_added').notNullable().defaultTo(db.fn.now());
       });
     }
   });
 
- console.log('MySQL connection established successfully.');
+  console.log('MySQL connection established successfully.');
 }

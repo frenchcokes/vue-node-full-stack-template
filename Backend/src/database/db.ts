@@ -1,7 +1,6 @@
-import knex, { Knex } from 'knex';
+import knex from 'knex';
 
-let db2: Knex;
-db2 = knex({
+const db = knex({
   client: 'mysql2',
   connection: {
     host: 'localhost',
@@ -12,4 +11,4 @@ db2 = knex({
   },
 });
 
-export { db2 };
+export { db };

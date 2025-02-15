@@ -18,10 +18,11 @@ npm install
    https://www.mysql.com/products/workbench/
 
    Setup new MySQL connection with values:
+
    - Hostname = 127.0.0.1
    - Username = user
    - Port = 3306
-   You can now connect to it with the password: userpassword
+     You can now connect to it with the password: userpassword
 
 ### Compile and Hot-Reload for Development
 
