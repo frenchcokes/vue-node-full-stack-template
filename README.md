@@ -12,7 +12,7 @@ Whatever your idea, you should be able to build it with these.
 
 ## Workflow
 
-Make sure you've done the setup. Open two separate terminals, and cd into them. You should have terminals that have endings like this:
+1. Make sure you've done the setup. Open two separate terminals, and cd into them. You should have terminals that have endings like this:
 
 ```sh
 A_Path\FullStackBoilerPlate\Frontend
@@ -21,7 +21,13 @@ A_Path\FullStackBoilerPlate\Frontend
 A_Path\FullStackBoilerPlate\Backend
 ```
 
-In both terminals, run this:
+2. Turn MySQL server on:
+
+```sh
+npm run sqlon
+```
+
+3. In both terminals, run this:
 
 ```sh
 npm run dev
