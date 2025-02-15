@@ -11,10 +11,34 @@
 npm install
 ```
 
+3. Install Docker Desktop (For MySQL local server)
+   https://docs.docker.com/get-started/introduction/get-docker-desktop/
+
+4. Optionally install MySQL Workbench (For easy access to MySQL local server)
+   https://www.mysql.com/products/workbench/
+
+   Setup new MySQL connection with values:
+   - Hostname = 127.0.0.1
+   - Username = user
+   - Port = 3306
+   You can now connect to it with the password: userpassword
+
 ### Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
+```
+
+### Turn on MySQL Docker Server (Will not work if Docker Desktop isn't running)
+
+```sh
+npm run sqlon
+```
+
+### Turn off MySQL Docker Server
+
+```sh
+npm run sqloff
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
