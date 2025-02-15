@@ -21,7 +21,7 @@ A_Path\FullStackBoilerPlate\Frontend
 A_Path\FullStackBoilerPlate\Backend
 ```
 
-2. Turn MySQL server on:
+2. Turn MySQL server on (Make sure Docker Desktop is running):
 
 ```sh
 npm run sqlon
