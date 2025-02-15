@@ -6,7 +6,9 @@ Whatever your idea, you should be able to build it with these.
 
 ## Setup
 
-Check the README.md files of the Frontend and Backend folders. The setup needs to be completed for each folder.
+1. Clone the repository
+
+2. Check the README.md files of the Frontend and Backend folders. The setup needs to be completed for each folder (you need to cd into them).
 
 ## Workflow
 

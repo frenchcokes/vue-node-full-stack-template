@@ -5,7 +5,7 @@
 1. Install Node.js (If you don't have it already):
    https://nodejs.org/en/download
 
-2. Install Dependencies. Run this:
+2. Install Dependencies. Make sure you are cd'd into this folder before running (A_Path\FullStackBoilerPlate\Backend). Run this:
 
 ```sh
 npm install
@@ -22,7 +22,8 @@ npm install
    - Hostname = 127.0.0.1
    - Username = user
    - Port = 3306
-     You can now connect to it with the password: userpassword
+
+   You can now connect to it with the password: userpassword
 
 ### Compile and Hot-Reload for Development
 

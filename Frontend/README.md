@@ -11,7 +11,7 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 1. Install Node.js (If you don't have it already):
    https://nodejs.org/en/download
 
-2. Install Dependencies. Run this:
+2. Install Dependencies. Make sure you are cd'd into this folder before running (A_Path\FullStackBoilerPlate\Frontend). Run this:
 
 ```sh
 npm install
