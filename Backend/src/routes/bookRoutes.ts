@@ -5,10 +5,12 @@ const router = Router();
 
 router.post('/books', async (req, res) => {
   try {
+    const formattedDate = new Date(req.body.date_published).toISOString().split('T')[0];
+
     await db2('books').insert({
       title: req.body.title,
       author: req.body.author,
-      date_published: req.body.date_published,
+      date_published: formattedDate,
     });
     res.status(200).send({ message: 'Book added successfully.' });
   } catch (error) {
@@ -18,12 +20,11 @@ router.post('/books', async (req, res) => {
 
 router.get('/books', async (req, res) => {
   try {
-    const data = await db2('books')
+    await db2('books')
       .select('*')
       .then(books => {
         res.status(200).send(books);
       });
-    res.status(200).send(data);
   } catch (error) {
     res.status(500).send({ message: 'Internal server error.' });
   }
@@ -38,13 +39,15 @@ router.delete('/books/:id', async (req, res) => {
   }
 });
 
-router.patch('/books/:id', async (req, res) => {
+router.put('/books/:id', async (req, res) => {
   try {
+    const formattedDate = new Date(req.body.date_published).toISOString().split('T')[0];
+
     await db2('books')
       .update({
         title: req.body.title,
         author: req.body.author,
-        date_published: req.body.date_published,
+        date_published: formattedDate,
       })
       .where('id', req.params.id);
     res.status(200).send({ message: 'Book updated successfully.' });

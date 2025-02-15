@@ -7,6 +7,8 @@ const router = express();
 
 const PORT = 3000;
 
+router.use(express.json());
+router.use(express.urlencoded({ extended: true }));
 router.use(cors());
 
 setupDatabase();
