@@ -6,6 +6,13 @@ This template is an unsupported addition from the Vue + Vite template.
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
+## Included in project
+
+- [PrimeVue](https://primevue.org/)
+- [Tailwind.css V3](https://tailwindcss.com/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+
 ## Project Setup
 
 1. Install Node.js (If you don't have it already):
