@@ -1,5 +1,12 @@
 # Backend
 
+## Included in project
+
+- [Node.js](https://nodejs.org/en)
+- [Express](https://expressjs.com/)
+- [Nodemon](https://nodemon.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+
 ## Project Setup
 
 1. Install Node.js (If you don't have it already):
